@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn = new mysqli("localhost", "root", "", "mydatabase");
 	
 	// Set character set
-	$conn->set_charset("utf8");
+	$conn->set_charset("utf8mb4");
 
     // Check connection
     if ($conn->connect_error) {
